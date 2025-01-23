@@ -2,14 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Button from '../../atoms/Button/Button';
 import ProgressBar from '../../atoms/ProgressBar/ProgressBar';
-
-type CauseCardProps = {
-  category: string;
-  title: string;
-  raised: number;
-  goal: number;
-  imageSrc: string;
-};
+import { CauseCardProps } from '../../../types/CauseCardProps/CauseCardProps';
 
 export default function CauseCard({ category, title, raised, goal, imageSrc }: CauseCardProps) {
   return (
@@ -20,7 +13,7 @@ export default function CauseCard({ category, title, raised, goal, imageSrc }: C
           {category}
         </span>
       </div>
-      <div className="p-6">
+      <div className="p-8">
         <h3 className="mt-4 text-[24px] font-bold text-[#3A1700]">{title}</h3>
         <div className="mt-[33px] text-gray-600">
           <div className="flex justify-between">

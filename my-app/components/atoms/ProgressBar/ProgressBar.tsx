@@ -1,9 +1,5 @@
 import React from 'react';
-
-type ProgressBarProps = {
-  progress: number;
-  goal: number;
-};
+import { ProgressBarProps } from '../../../types/ProgressBarProps/ProgressBarProps';
 
 export default function ProgressBar({ progress, goal }: ProgressBarProps) {
   const percentage = (progress / goal) * 100;
