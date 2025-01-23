@@ -8,13 +8,12 @@ type StatItem = {
 
 type StatsSectionProps = {
   stats: StatItem[];
-  title: string; // Adding title for the h2 element
+  title: string; 
 };
 
 const StatsSection = ({ stats, title }: StatsSectionProps) => {
   return (
     <div className="mt-[327px]">
-      {/* h2 Element above the cards */}
       <h2 className="text-[24px] font-semibold text-[#3A1700] text-center mb-8">{title}</h2>
 
       <div className="flex justify-between gap-8 mt-[42px]">
