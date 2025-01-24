@@ -1,10 +1,4 @@
-import React from 'react';
-
-type PrimaryButtonProps = {
-  text: string;
-  onClick?: () => void;
-  className?: string;
-};
+import { PrimaryButtonProps } from '../../../types/PrimaryButtonProps/PrimaryButtonProps';
 
 const PrimaryButton = ({ text, onClick, className = '' }: PrimaryButtonProps) => {
   return (

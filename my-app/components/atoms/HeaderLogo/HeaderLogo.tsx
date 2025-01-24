@@ -1,13 +1,11 @@
-import React from 'react'
+import { Logo } from '../../../types/HeaderLogoProps/HeaderLogoProps';
 
-type Logo = {
-    logo: string
-}
-
-const HeaderLogo = ({logo}: Logo) => {
+const HeaderLogo = ({ logo }: Logo) => {
   return (
-    <p className='text-[#3A1700] font-rowdies text-[40px] font-light leading-[48px] tracking-[-1px] cursor-pointer relative z-[1]'>{logo}</p>
-  )
-}
+    <p className='text-[#3A1700] font-rowdies text-[40px] font-light leading-[48px] tracking-[-1px] cursor-pointer relative z-[1]'>
+      {logo}
+    </p>
+  );
+};
 
-export default HeaderLogo
+export default HeaderLogo;

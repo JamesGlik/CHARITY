@@ -1,10 +1,4 @@
-import React from 'react';
-
-type ImageCardProps = {
-  image: string;
-  alt: string;
-  children?: React.ReactNode;
-};
+import { ImageCardProps } from '../../../types/ImageCardProps/ImageCardProps';
 
 const ImageCard = ({ image, alt, children }: ImageCardProps) => {
   return (

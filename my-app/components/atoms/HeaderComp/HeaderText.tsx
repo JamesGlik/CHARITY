@@ -1,13 +1,9 @@
-import React from 'react'
+import { Header } from '../../../types/HeaderTextProps/HeaderTextProps';
 
-type Header = {
-    text: string
-}
-
-const HeaderText = ({text}: Header) => {
+const HeaderText = ({ text }: Header) => {
   return (
     <p className='text-[#3A1700] leading-[32px] cursor-pointer'>{text}</p>
-  )
-}
+  );
+};
 
-export default HeaderText
+export default HeaderText;

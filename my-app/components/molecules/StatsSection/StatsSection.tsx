@@ -1,15 +1,4 @@
-import React from 'react';
-
-type StatItem = {
-  number: number;
-  label1: string;
-  label2: string;
-};
-
-type StatsSectionProps = {
-  stats: StatItem[];
-  title: string; 
-};
+import { StatItem, StatsSectionProps } from '../../../types/StatsSectionProps/StatsSectionProps';
 
 const StatsSection = ({ stats, title }: StatsSectionProps) => {
   return (

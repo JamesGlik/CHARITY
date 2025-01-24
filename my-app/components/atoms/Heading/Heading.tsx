@@ -1,10 +1,4 @@
-import React from 'react';
-
-type HeadingProps = {
-  title: string;
-  subtitle: string;
-  className?: string;
-};
+import { HeadingProps } from '../../../types/HeadingProps/HeadingProps';
 
 const Heading = ({ title, subtitle, className = '' }: HeadingProps) => {
   return (
