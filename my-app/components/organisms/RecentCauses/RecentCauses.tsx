@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
 import CauseCard from '../../molecules/CauseCard/CauseCard';
-
-type RecentCausesProps = {
-  causes: {
-    category: string;
-    title: string;
-    raised: number;
-    goal: number;
-    imageSrc: string;
-  }[];
-};
+import { RecentCausesProps } from '../../../types/RecentCausesProps/RecentCausesProps';
 
 export default function RecentCauses({ causes }: RecentCausesProps) {
   const [visibleCauses, setVisibleCauses] = useState(causes);
@@ -41,7 +32,7 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
         <div className="mt-[64px] text-center">
           <button
             onClick={handleExploreAll}
-            className="px-6 py-2 w-[170px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white"
+            className="px-6 py-2 w-[170px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out "
           >
             Explore All
           </button>
