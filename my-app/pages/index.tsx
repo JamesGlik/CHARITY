@@ -5,6 +5,7 @@ import Header from '@/components/molecules/Header/Header';
 import GallerySection from '@/components/organisms/GallerySection/GallerySection';
 import FeaturesSection from '@/components/organisms/FeaturesSection/FeaturesSection';
 import DonationSectionWrapper from '@/components/organisms/DonationSectionWrapper/DonationSectionWrapper';
+import ServicesSection from '@/components/organisms/ServicesSection/ServicesSection';
 
 const index = () => {
   return (
@@ -13,6 +14,7 @@ const index = () => {
       <FeaturesSection />
       <Example />
       <AboutSection />
+      <ServicesSection/>
       <GallerySection />
       <DonationSectionWrapper/>
     </div>
