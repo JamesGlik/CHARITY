@@ -1,11 +1,5 @@
 import React from 'react';
-
-type IconCardProps = {
-  iconSrc: string;
-  title: string;
-  content: string;
-  bgColor: string;
-};
+import { IconCardProps } from '../../../types/iconCardProps/IconCardProps';
 
 const IconCard = ({ iconSrc, title, content, bgColor }: IconCardProps) => {
   return (

@@ -1,15 +1,11 @@
 import React from 'react';
-
-interface FooterSectionProps {
-  title: string;
-  links: { href: string; text: string }[];
-}
+import { FooterSectionProps } from '../../../types/FooterSectionProps/FooterSectionProps';
 
 function FooterSection({ title, links }: FooterSectionProps) {
   return (
     <div>
       <h3 className="text-white tracking-[3px] font-light mb-[9px] mt-[90px]">{title}</h3>
-      <ul className="space-y-2">
+      <ul>
         {links.map((link, index) => (
           <li key={index}>
             <a
