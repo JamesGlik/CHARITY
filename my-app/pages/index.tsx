@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/organisms/FeaturesSection/FeaturesSect
 import DonationSectionWrapper from '@/components/organisms/DonationSectionWrapper/DonationSectionWrapper';
 import ServicesSection from '@/components/organisms/ServicesSection/ServicesSection';
 import CharitySection from '@/components/organisms/CharitySection/CharitySection';
+import EventsSection from '@/components/organisms/EventsSection/EventsSection';
 import ContactInfoSection from '@/components/organisms/ContactInfoSection/ContactInfoSection';
 
 const index = () => {
@@ -19,6 +20,7 @@ const index = () => {
       <ServicesSection/>
       <GallerySection />
       <DonationSectionWrapper/>
+      <EventsSection/>
       <CharitySection/>
       <ContactInfoSection/>
     </div>
