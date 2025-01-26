@@ -6,6 +6,7 @@ import GallerySection from '@/components/organisms/GallerySection/GallerySection
 import FeaturesSection from '@/components/organisms/FeaturesSection/FeaturesSection';
 import DonationSectionWrapper from '@/components/organisms/DonationSectionWrapper/DonationSectionWrapper';
 import ServicesSection from '@/components/organisms/ServicesSection/ServicesSection';
+import CharitySection from '@/components/organisms/CharitySection/CharitySection';
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       <ServicesSection/>
       <GallerySection />
       <DonationSectionWrapper/>
+      <CharitySection/>
     </div>
   );
 };
