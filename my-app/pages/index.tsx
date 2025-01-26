@@ -8,6 +8,7 @@ import DonationSectionWrapper from '@/components/organisms/DonationSectionWrappe
 import ServicesSection from '@/components/organisms/ServicesSection/ServicesSection';
 import CharitySection from '@/components/organisms/CharitySection/CharitySection';
 import EventsSection from '@/components/organisms/EventsSection/EventsSection';
+import ContactInfoSection from '@/components/organisms/ContactInfoSection/ContactInfoSection';
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
       <DonationSectionWrapper/>
       <EventsSection/>
       <CharitySection/>
+      <ContactInfoSection/>
     </div>
   );
 };
