@@ -1,10 +1,4 @@
-import React from 'react';
-
-interface SocialImageProps {
-  src: string;
-  alt: string;
-  href: string;
-}
+import { SocialImageProps } from '../../../types/SocialImageProps/SocialImageProps';
 
 function SocialImage({ src, alt, href }: SocialImageProps) {
   return (
