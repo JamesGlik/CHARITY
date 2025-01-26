@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/organisms/FeaturesSection/FeaturesSect
 import DonationSectionWrapper from '@/components/organisms/DonationSectionWrapper/DonationSectionWrapper';
 import ServicesSection from '@/components/organisms/ServicesSection/ServicesSection';
 import CharitySection from '@/components/organisms/CharitySection/CharitySection';
+import FooterWrapper from '@/components/organisms/FooterWrapper/FooterWrapper';
 import EventsSection from '@/components/organisms/EventsSection/EventsSection';
 import ContactInfoSection from '@/components/organisms/ContactInfoSection/ContactInfoSection';
 
@@ -17,12 +18,13 @@ const index = () => {
       <FeaturesSection />
       <Example />
       <AboutSection />
-      <ServicesSection/>
+      <ServicesSection />
       <GallerySection />
-      <DonationSectionWrapper/>
-      <EventsSection/>
-      <CharitySection/>
-      <ContactInfoSection/>
+      <DonationSectionWrapper />
+      <EventsSection />
+      <CharitySection />
+      <ContactInfoSection />
+      <FooterWrapper />
     </div>
   );
 };
