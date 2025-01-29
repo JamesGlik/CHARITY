@@ -1,8 +1,5 @@
 import React from 'react';
-
-type CharityButtonProps = {
-  text: string;
-};
+import { CharityButtonProps } from '../../../types/CharityButtonProps/CharityButtonProps';
 
 const CharityButton = ({ text }: CharityButtonProps) => {
   return (

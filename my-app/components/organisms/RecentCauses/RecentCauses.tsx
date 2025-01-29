@@ -40,4 +40,4 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
       )}
     </section>
   );
-}
+} 
