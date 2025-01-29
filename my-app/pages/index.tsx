@@ -14,7 +14,7 @@ import VolunteersSection from '@/components/organisms/VolunteersSection/Voluntee
 
 const index = () => {
   return (
-    <div className="m-auto w-full">
+    <div className="m-auto w-full font-rowdies">
       <Header />
       <FeaturesSection />
       <Example />
