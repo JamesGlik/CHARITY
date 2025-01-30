@@ -9,8 +9,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-[#f3f2e7] relative">
-      <Rectangle />
+    <div className="bg-[#f3f2e7] relative h-[100vh] z-[1] overflow-hidden">
+      <div className="absolute z-[0]">
+        <Rectangle />
+      </div>
+      <div className="absolute top-[150px]">
+        <Oval/>
+      </div>
+      <div className="absolute right-[630px] top-[-40px]">
+        <BigRectangle/>
+      </div>
       <div className="flex items-center gap-x-[58px] pl-[16px] pt-[16px] pr-[16px]">
         <div>
           <HeaderLogo logo="CHA" />
@@ -30,7 +38,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-x-[250px]">
+      <div className="flex justify-between px-[135px] items-center">
         <div className="flex flex-col gap-y-[25px] w-[396px] justify-center items-start">
           <h1 className="text-[72px] font-rowdies text-[#3A1700] font-light leading-[80px] tracking-[-3px]">
             Giving help to those who need it

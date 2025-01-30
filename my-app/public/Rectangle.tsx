@@ -2,7 +2,6 @@ import React from "react";
 
 const Rectangle = () => {
   return (
-    <div className="absolute z-[-1]">
       <svg
         width="147"
         height="956"
@@ -20,7 +19,6 @@ const Rectangle = () => {
           fill="#E29F72"
         />
       </svg>
-    </div>
   );
 };
 
