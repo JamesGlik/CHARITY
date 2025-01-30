@@ -1,16 +1,25 @@
 import Button from "@/components/atoms/GalleryButton/GalleryButton";
 import EventsCard from "@/components/molecules/EventsCard/EventsCard";
+import FutureEventsLine from "@/public/FutureEventsLine";
+import FutureEventsOval from "@/public/FutureEventsOval";
 import React from "react";
 
 const EventsSection = () => {
   return (
-    <div>
+    <div className="relative">
       <h3 className="text-[#E29F72] text-center font-rowdies font-light leading-[32px] tracking-[3px] uppercase mb-[17px]">
         future events
       </h3>
       <p className="text-[#3A1700] text-center font-rowdies text-[56px] font-light leading-[64px] tracking-[-2px] mb-[69px]">
         Explore Events
       </p>
+
+      <div className="absolute left-[400px] top-[500px] z-[-1]">
+        <FutureEventsLine/>
+      </div>
+      <div className="absolute left-[500px] top-[580px] z-[-1]">
+        <FutureEventsOval/>
+      </div>
 
       <div className="flex flex-col gap-y-[32px] mb-[48px]">
         <EventsCard
