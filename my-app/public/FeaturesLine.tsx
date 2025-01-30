@@ -2,7 +2,6 @@ import React from "react";
 
 const FeaturesLine = () => {
   return (
-    <div className="absolute z-[0] left-3">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="192"
@@ -15,7 +14,6 @@ const FeaturesLine = () => {
           fill="black"
         />
       </svg>
-    </div>
   );
 };
 

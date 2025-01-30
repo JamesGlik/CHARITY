@@ -1,9 +1,11 @@
 import FeaturesCard from "@/components/molecules/FeaturesCard/FeaturesCard";
+import FeaturesLine from "@/public/FeaturesLine";
+import FeaturesOval from "@/public/FeaturesOval";
 import React from "react";
 
 const FeaturesSection = () => {
   return (
-    <div className="pt-[122px] px-[215px]">
+    <div className="pt-[122px] px-[215px] flex flex-col justify-center">
       <p className="mb-[15px] text-center text-[#E29F72] font-rowdies font-light leading-[32px] uppercase tracking-[3px]">
         our features
       </p>
@@ -13,7 +15,13 @@ const FeaturesSection = () => {
         lots of different ways.
       </p>
 
-      <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px] mb-[30px] mt-[66px] justify-center">
+      <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px] mb-[30px] mt-[66px] justify-center relative">
+        <div className="absolute bottom-[140px] -left-[40px] z-[-2]">
+          <FeaturesLine />
+        </div>
+        <div className="absolute z-[-1] top-[70px] -left-[35px]">
+          <FeaturesOval/>
+        </div>
         <FeaturesCard
           iconSvg="/features_image1.svg"
           cardHeader="Direct Help"
