@@ -11,6 +11,7 @@ import FooterWrapper from '@/components/organisms/FooterWrapper/FooterWrapper';
 import EventsSection from '@/components/organisms/EventsSection/EventsSection';
 import ContactInfoSection from '@/components/organisms/ContactInfoSection/ContactInfoSection';
 import VolunteersSection from '@/components/organisms/VolunteersSection/VolunteersSection';
+import LatestArticles from '@/components/organisms/LatestArticles/LatestArticles';
 
 const index = () => {
   return (
@@ -24,6 +25,7 @@ const index = () => {
       <DonationSectionWrapper />
       <EventsSection />
       <VolunteersSection/>
+      <LatestArticles/>
       <CharitySection />
       <ContactInfoSection />
       <FooterWrapper />
