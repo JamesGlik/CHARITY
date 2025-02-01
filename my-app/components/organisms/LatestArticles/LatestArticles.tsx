@@ -33,24 +33,22 @@ const articles: Article[] = [
 
 function LatestArticles() {
   return (
-    <section className="w-full px-[183px] pt-[138px] pb-[80px] mx-auto">
+    <section className="w-full px-[135px] pt-[138px] pb-[80px] mx-auto">
       <h3 className="text-[#E29F72] tracking-[3px]">Latest News</h3>
       <h2 className="text-[56px] font-bold text-[#3A1700]">Latest Articles</h2>
 
-      <div className="mt-[69px] flex justify-center">
-        <div className="grid grid-cols-1 gap-[30px] md:grid-cols-3">
-          {articles.map((article, index) => (
-            <ArticleCard
-              key={index}
-              title={article.title}
-              date={article.date}
-              category={article.category}
-              imageSrc={article.imageSrc}
-              raised={20}
-              goal={100}
-            />
-          ))}
-        </div>
+      <div className="mt-[69px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[60px]">
+        {articles.map((article, index) => (
+          <ArticleCard
+            key={index}
+            title={article.title}
+            date={article.date}
+            category={article.category}
+            imageSrc={article.imageSrc}
+            raised={20}
+            goal={100}
+          />
+        ))}
       </div>
 
       <Newsletter />
