@@ -4,8 +4,8 @@ import ContentBlock from '../../molecules/ContentBlock/ContentBlock';
 const CharitySection = () => {
   return (
     <section
-      className="w-full h-[720px] bg-cover bg-center flex items-center justify-between px-[135px]"
-      style={{ backgroundImage: `url('/charity_bg_image.svg')` }} 
+      className="w-full h-[840px] bg-cover bg-center flex items-center justify-between px-[135px]"
+      style={{ backgroundImage: `url('/charity_bg_image.svg')` }}
     >
       <ContentBlock
         heading="Giving help to those who need it"
@@ -15,7 +15,7 @@ const CharitySection = () => {
       <img
         src="/charity_image.svg"
         alt="Right Side Image"
-        className=" object-cover rounded-lg"
+        className="object-contain rounded-lg"
       />
     </section>
   );
