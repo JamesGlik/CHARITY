@@ -5,7 +5,7 @@ import DonationButton from '../../atoms/DonationButton/DonationButton';
 
 function DonationCTA({ heading, subtext }: DonationCTAProps) {
   return (
-    <div className="flex justify-between items-center w-full px-[135px]">
+    <div className="flex justify-between items-center w-full px-[165px]">
       <div className="flex flex-col mr-8">
         <DonationHeading text={heading} className="text-white mb-4" />
         <Text content={subtext} className="text-white" />
