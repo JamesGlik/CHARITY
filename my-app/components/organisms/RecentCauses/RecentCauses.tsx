@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CauseCard from '../../molecules/CauseCard/CauseCard';
 import { RecentCausesProps } from '../../../types/RecentCausesProps/RecentCausesProps';
+import { motion } from 'framer-motion';
 
 export default function RecentCauses({ causes }: RecentCausesProps) {
   const [visibleCauses, setVisibleCauses] = useState(causes);
@@ -18,14 +19,36 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
       </div>
       <div className="mt-[64px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[135px] justify-items-center">
         {visibleCauses.map((cause, index) => (
-          <CauseCard key={index} {...cause} />
+          <motion.div
+            key={index}
+            whileHover={{
+              scale: 1.05,
+              padding: '20px',
+              transition: { duration: 0.3 },
+            }}
+            className="mt-8"
+          >
+            <CauseCard {...cause} />
+          </motion.div>
         ))}
 
         {showAll &&
           causes.map((cause, index) => (
-            <div key={index} className="mt-8">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.5 }}
+              whileHover={{
+                scale: 1.05,
+                padding: '20px',
+                transition: { duration: 0.3 },
+              }}
+              className="mt-8"
+            >
               <CauseCard {...cause} />
-            </div>
+            </motion.div>
           ))}
       </div>
       {!showAll && (
@@ -40,4 +63,4 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
       )}
     </section>
   );
-} 
+}
