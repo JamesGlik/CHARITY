@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import CauseCard from '../../molecules/CauseCard/CauseCard';
-import { RecentCausesProps } from '../../../types/RecentCausesProps/RecentCausesProps';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import CauseCard from "../../molecules/CauseCard/CauseCard";
+import { RecentCausesProps } from "../../../types/RecentCausesProps/RecentCausesProps";
+import { motion } from "framer-motion";
 
 export default function RecentCauses({ causes }: RecentCausesProps) {
   const [visibleCauses, setVisibleCauses] = useState(causes);
@@ -15,15 +15,17 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
     <section className="pt-[138px] pb-[112px] bg-white">
       <div className="mx-auto px-4 text-center">
         <h2 className="text-[16px] font-semibold text-[#E29F72]">OUR CASES</h2>
-        <h3 className="mt-[17px] text-[56px] font-bold text-[#3A1700]">Our Recent Causes</h3>
+        <h3 className="mt-[17px] text-[56px] font-bold text-[#3A1700]">
+          Our Recent Causes
+        </h3>
       </div>
-      <div className="mt-[64px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[135px] justify-items-center">
+      <div className="mt-[64px] grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 px-[135px] justify-items-center">
         {visibleCauses.map((cause, index) => (
           <motion.div
             key={index}
             whileHover={{
               scale: 1.05,
-              padding: '20px',
+              padding: "20px",
               transition: { duration: 0.3 },
             }}
             className="mt-8"
@@ -42,7 +44,7 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
               transition={{ duration: 0.5 }}
               whileHover={{
                 scale: 1.05,
-                padding: '20px',
+                padding: "20px",
                 transition: { duration: 0.3 },
               }}
               className="mt-8"
