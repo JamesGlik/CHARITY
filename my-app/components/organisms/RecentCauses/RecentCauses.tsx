@@ -14,12 +14,12 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
   return (
     <section className="pt-[138px] pb-[112px] bg-white">
       <div className="mx-auto px-4 text-center">
-        <h2 className="text-[16px] font-semibold text-[#E29F72]">OUR CASES</h2>
-        <h3 className="mt-[17px] text-[56px] font-bold text-[#3A1700]">
+        <h2 className="text-[16px] font-semibold text-[#E29F72] tracking-[3px]">OUR CASES</h2>
+        <h3 className="mt-[17px] text-[56px] font-bold text-[#3A1700] sm:text-[40px]">
           Our Recent Causes
         </h3>
       </div>
-      <div className="mt-[64px] grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 px-[135px] justify-items-center">
+      <div className="mt-[64px] grid grid-cols-3 sm:grid-cols-1 px-[135px] justify-items-center">
         {visibleCauses.map((cause, index) => (
           <motion.div
             key={index}
