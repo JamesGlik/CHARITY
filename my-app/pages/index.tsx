@@ -19,7 +19,7 @@ const index = () => {
   return (
     <div className="m-auto w-full font-rowdies">
       <Header />
-      <FeaturesSection />
+      {/* <FeaturesSection />
       <Example />
       <AboutSection />
       <ServicesSection />
@@ -31,7 +31,7 @@ const index = () => {
       <LatestArticles/>
       <CharitySection />
       <ContactInfoSection />
-      <FooterWrapper />
+      <FooterWrapper /> */}
     </div>
   );
 };
