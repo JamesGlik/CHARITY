@@ -21,7 +21,7 @@ function ArticleCard({
   const progress = (raised / goal) * 100; 
 
   return (
-    <div className="bg-[#F3F2E7] rounded-lg shadow-md overflow-hidden w-[370px] h-[464px] ">
+    <div className="bg-[#F3F2E7] rounded-lg shadow-md overflow-hidden min-w-[329px] max-w-[370px] sm:w-[329px] h-[464px] mt-8 ">
       <div className="relative w-full h-[240px]">
         <img src={imageSrc} alt={title} className="w-full h-full object-cover" />
         <div className="absolute top-2 left-2">
