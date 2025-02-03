@@ -17,7 +17,7 @@ import StoriesSection from '@/components/organisms/StoriesSection/StoriesSection
 
 const index = () => {
   return (
-    <div className="m-auto w-full">
+    <div className="m-auto max-w-[1440px]">
       <Header />
       <FeaturesSection />
       <Example />
