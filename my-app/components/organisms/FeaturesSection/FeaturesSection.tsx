@@ -5,21 +5,21 @@ import React from "react";
 
 const FeaturesSection = () => {
   return (
-    <div className="pt-[122px] px-[215px] flex flex-col justify-center">
-      <p className="mb-[15px] text-center text-[#E29F72] font-rowdies font-light leading-[32px] uppercase tracking-[3px]">
+    <div className="pt-[122px] px-[215px] flex flex-col justify-center lg:px-[23px]">
+      <p className="pb-[15px] text-center text-[#E29F72] font-rowdies font-light leading-[32px] uppercase tracking-[3px]">
         our features
       </p>
-      <p className="text-center text-[#3A1700] font-rowdies text-[40px] font-light leading-[48px] tracking-[-1px]">
-        Whatever it is that you care about, there will <br /> be a charity
+      <p className="text-center text-[#3A1700] font-rowdies text-[40px] font-light leading-[48px] tracking-[-1px] md:text-[24px] md:tracking-[0px] md:leading-[32px]">
+        Whatever it is that you care  about, there will <br className="md:hidden"/> be a charity
         working on it. Charities help in <br />
         lots of different ways.
       </p>
 
-      <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px] mb-[30px] mt-[66px] justify-center relative">
-        <div className="absolute bottom-[140px] -left-[40px] z-[-2]">
+      <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px] pb-[30px] pt-[66px] justify-center relative flex-wrap md:grid-cols-1 md:gap-y-[16px] md:pt-[36px]">
+        <div className="absolute bottom-[140px] -left-[40px] z-[-2] md:hidden">
           <FeaturesLine />
         </div>
-        <div className="absolute z-[-1] top-[70px] -left-[35px]">
+        <div className="absolute z-[-1] top-[70px] -left-[35px] md:hidden">
           <FeaturesOval/>
         </div>
         <FeaturesCard
