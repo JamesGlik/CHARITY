@@ -28,7 +28,7 @@ function Footer({
         </div>
       </div>
       <div className="relative">
-        <div className="absolute top-[40px] right-[-20px] sm:w-[160px] sm:h-[48px]">
+        <div className="absolute sm:top-[40px] top-[-130px] right-[-20px] sm:w-[160px] sm:h-[48px]">
           <SocialImage {...socialImage} />
         </div>
       </div>
