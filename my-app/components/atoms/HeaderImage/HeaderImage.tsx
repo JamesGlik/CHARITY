@@ -5,7 +5,7 @@ import Image from 'next/image'
 const HeaderImage = () => {
   return (
     <div>
-        <Image src={header} width={550} height={550} alt='header image'/>
+        <Image src={header} width={600} height={600} alt='header image'/>
     </div>
   )
 }

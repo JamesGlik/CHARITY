@@ -2,7 +2,7 @@ import React from "react";
 
 const BigRectangle = () => {
   return (
-    <div className="absolute">
+    <div>
       <svg
         width="625"
         height="1347"
