@@ -12,7 +12,6 @@ import EventsSection from '@/components/organisms/EventsSection/EventsSection';
 import ContactInfoSection from '@/components/organisms/ContactInfoSection/ContactInfoSection';
 import VolunteersSection from '@/components/organisms/VolunteersSection/VolunteersSection';
 import LatestArticles from '@/components/organisms/LatestArticles/LatestArticles';
-import QuoteSlider from '@/components/molecules/QuoteSwiper/QuoteSwiper';
 import StoriesSection from '@/components/organisms/StoriesSection/StoriesSection';
 
 const index = () => {
