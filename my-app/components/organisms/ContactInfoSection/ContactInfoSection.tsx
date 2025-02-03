@@ -3,7 +3,7 @@ import IconCard from '../../atoms/IconCard/IconCard';
 
 const ContactInfoSection = () => {
   return (
-    <section className="w-full flex">
+    <section className="w-full flex sm:flex-wrap sm:flex-col">
       <IconCard
         iconSrc="/phone.svg"
         title="Phone"
