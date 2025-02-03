@@ -3,7 +3,6 @@ import HeaderText from "@/components/atoms/HeaderComp/HeaderText";
 import HeaderImage from "@/components/atoms/HeaderImage/HeaderImage";
 import HeaderLogo from "@/components/atoms/HeaderLogo/HeaderLogo";
 import BigRectangle from "@/public/BigRectangle";
-import BurgerMenuIcon from "@/public/BurgerMenuIcon";
 import Oval from "@/public/Oval";
 import Rectangle from "@/public/Rectangle";
 import React from "react";
