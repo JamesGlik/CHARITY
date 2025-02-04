@@ -9,8 +9,8 @@ const AboutSection = () => {
     <div className="bg-[#F3F2E7] h-auto py-20">
       <div className="mx-auto px-[155px] sm:px-6">
 
-        <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col">
-          <div className="w-1/2 sm:w-full">
+        <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col lg:flex-col xl:flex-col">
+          <div className="w-1/2 sm:w-full lg:w-full xl:w-full">
             <ImageCard image="/about_us_image.svg" alt="About us image" />
           </div>
           <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[48px]">
@@ -36,8 +36,8 @@ const AboutSection = () => {
           />
         </div>
 
-        <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col">
-          <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[138px]">
+        <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col lg:flex-col xl:flex-col">
+          <div className="w-1/2 sm:w-full lg:w-full xl:w-full sm:pl-[30px] sm:pt-[138px]">
             <h1 className="font-medium text-[#E29F72] mt-[298px] sm:mt-5 tracking-[3px]">
               Volunteer
             </h1>
