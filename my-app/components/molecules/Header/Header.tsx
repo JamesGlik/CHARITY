@@ -10,7 +10,7 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 const Header = () => {
   return (
-    <div className="bg-[#f3f2e7] relative h-[90vh] z-[1] overflow-hidden lg:h-full">
+    <div className="bg-[#f3f2e7] relative h-[100vh] z-[1] overflow-hidden lg:h-full">
       <div className="absolute z-[0]">
         <Rectangle />
       </div>
@@ -29,7 +29,9 @@ const Header = () => {
             <HeaderText text="Causes" />
             <HeaderText text="Services" />
             <HeaderText text="Events" />
-            <HeaderText text="Blog" />
+            <div className="z-[61]">
+              <HeaderText text="Blog" />
+            </div>
           </div>
           <div>
             <div className="lg:hidden">
@@ -42,10 +44,10 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center h-[calc(80vh-120px)] px-[135px] xl:px-[50px] lg:flex-col-reverse lg:items-center lg:h-auto lg:pb-[48px] md:px-[23px]">
+      <div className="flex justify-between items-center h-[calc(90vh-20px)] px-[135px] xl:px-[50px] lg:flex-col-reverse lg:items-center lg:h-auto lg:pb-[48px] md:px-[23px]">
         <div className="flex flex-col gap-y-[25px] justify-center items-start lg:gap-y-[15px]">
           <h1 className="text-[72px] font-rowdies text-[#3A1700] font-light leading-[80px] tracking-[-3px] z-[1] sm:text-[56px] sm:leading-[64px] sm:tracking-[-2px]">
-            Giving help <br/> to those who <br/> need it
+            Giving help <br /> to those who <br /> need it
           </h1>
           <p className="font-manrope leading-[32px] text-[rgba(58, 23, 0, 0.50)]">
             It involves giving money, goods or time and effort <br /> to those
