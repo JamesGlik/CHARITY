@@ -11,6 +11,10 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
     setShowAll(true);
   };
 
+  const handleShowLess = () => {
+    setShowAll(false);
+  };
+
   return (
     <section className="pt-[138px] pb-[112px] bg-white">
       <div className="mx-auto px-4 text-center">
@@ -19,13 +23,12 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
           Our Recent Causes
         </h3>
       </div>
-      <div className="mt-[64px] grid grid-cols-3 sm:grid-cols-1 px-[135px] justify-items-center">
+      <div className="mt-[64px] flex flex-wrap sm:flex-wrap lg:flex-wrap xl:flex-wrap gap-[30px] justify-center px-[135px] justify-items-center">
         {visibleCauses.map((cause, index) => (
           <motion.div
             key={index}
             whileHover={{
               scale: 1.05,
-              padding: "20px",
               transition: { duration: 0.3 },
             }}
             className="mt-8"
@@ -37,14 +40,13 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
         {showAll &&
           causes.map((cause, index) => (
             <motion.div
-              key={index}
+              key={`extra-${index}`}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{ duration: 0.5 }}
               whileHover={{
                 scale: 1.05,
-                padding: "20px",
                 transition: { duration: 0.3 },
               }}
               className="mt-8"
@@ -53,16 +55,39 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
             </motion.div>
           ))}
       </div>
-      {!showAll && (
-        <div className="mt-[64px] text-center">
-          <button
-            onClick={handleExploreAll}
-            className="px-[40px] py-[15px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out "
+      <div className="mt-[64px] text-center">
+        {!showAll ? (
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.3 },
+            }}
+            className="inline-block"
           >
-            Explore All
-          </button>
-        </div>
-      )}
+            <button
+              onClick={handleExploreAll}
+              className="px-[40px] py-[15px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
+            >
+              Explore All
+            </button>
+          </motion.div>
+        ) : (
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.3 },
+            }}
+            className="inline-block"
+          >
+            <button
+              onClick={handleShowLess}
+              className="px-[40px] py-[15px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
+            >
+              Show Less
+            </button>
+          </motion.div>
+        )}
+      </div>
     </section>
   );
 }
