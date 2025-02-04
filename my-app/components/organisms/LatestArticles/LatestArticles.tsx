@@ -39,7 +39,7 @@ function LatestArticles() {
         <h2 className="text-[56px] font-bold text-[#3A1700] sm:text-[40px]">Latest Articles</h2>
       </div>
 
-      <div className="mt-[69px] sm:mt-[55px] flex flex-wrap justify-start gap-[60px] sm:gap-4">
+      <div className="mt-[69px] sm:mt-[55px] flex flex-wrap justify-start gap-[30px] sm:gap-4">
         {articles.map((article, index) => (
           <ArticleCard
             key={index}

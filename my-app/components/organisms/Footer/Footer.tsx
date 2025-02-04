@@ -33,22 +33,20 @@ function Footer({
         </div>
       </div>
 
-      <div className="flex flex-row justify-between items-center mt-[70px] pb-[54px] border-t border-white sm:mt-[150px] pt-4 opacity-[50%] max-sm:flex-col sm:justify-center sm:items-center sm:text-center sm:w-full sm:border-t-2">
-        <div className="flex flex-col sm:w-[300%] sm:items-center sm:mb-4">
-          <p className="text-sm text-white mt-[41px] opacity-[50%] sm:text-center sm:mb-[10px]">
-            {copyright}
-          </p>
-          <div className="flex space-x-4 sm:flex-row sm:justify-center sm:items-center sm:text-center sm:w-[200%]">
-            {termsLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                className="text-white text-sm hover:underline sm:mb-2 sm:mr-4"
-              >
-                {link.text}
-              </a>
-            ))}
-          </div>
+      <div className="flex justify-between items-center mt-[70px] pb-[54px] border-t border-white opacity-[50%] sm:flex-col sm:justify-center sm:items-center sm:text-center sm:w-full sm:mt-[150px]">
+        <p className="text-sm text-white mt-[41px] sm:w-[150%] opacity-[50%] sm:mt-4 sm:mb-2">
+          {copyright}
+        </p>
+        <div className="flex space-x-4 sm:flex sm:flex-row sm:justify-center pt-[40px] sm:w-[300%] sm:items-center">
+          {termsLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="text-white text-sm hover:underline"
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
     </footer>
