@@ -6,22 +6,22 @@ import React from "react";
 
 const EventsSection = () => {
   return (
-    <div className="relative">
-      <h3 className="text-[#E29F72] text-center font-rowdies font-light leading-[32px] tracking-[3px] uppercase mb-[17px]">
+    <div className="relative px-[50px] lg:px-[23px] flex flex-col items-center">
+      <h3 className="text-[#E29F72] text-center font-rowdies font-light leading-[32px] tracking-[3px] uppercase pb-[17px] pt-[122px] md:pb-[15px]">
         future events
       </h3>
-      <p className="text-[#3A1700] text-center font-rowdies text-[56px] font-light leading-[64px] tracking-[-2px] mb-[69px]">
+      <p className="text-[#3A1700] text-center font-rowdies text-[56px] font-light leading-[64px] tracking-[-2px] pb-[69px] sm:text-[40px] md:pb-[55px]">
         Explore Events
       </p>
 
-      <div className="absolute left-[400px] top-[500px] z-[-1]">
+      <div className="absolute top-[40%] left-[10%] z-[-1] md:hidden">
         <FutureEventsLine/>
       </div>
-      <div className="absolute left-[500px] top-[580px] z-[-1]">
+      <div className="absolute top-[570px] left-[250px] z-[-1] md:hidden">
         <FutureEventsOval/>
       </div>
 
-      <div className="flex flex-col gap-y-[32px] mb-[48px]">
+      <div className="flex flex-col gap-y-[32px] pb-[48px]">
         <EventsCard
           imageSrc="/events_image.jpeg"
           cardHeader={
@@ -53,7 +53,7 @@ const EventsSection = () => {
         />
       </div>
 
-      <div className="flex justify-center mb-[112px]">
+      <div className="flex justify-center pb-[112px]">
         <Button label="Explore All" />
       </div>
     </div>
