@@ -11,7 +11,7 @@ function Footer({
   termsLinks,
 }: FooterProps) {
   return (
-    <footer className="bg-[#D58E5E] px-[135px] sm:h-[1300px]">
+    <footer className="bg-[#D58E5E] px-[135px] sm:h-[1100px]">
       <div className="mx-auto grid grid-cols-3 sm:grid-cols-1 max-sm:grid-cols-1">
         <div className="sm:mb-4 sm:flex sm:justify-center sm:items-center">
           <h2 className="text-white text-[40px] tracking-[-1px] font-light mt-[74px] sm:text-center">
