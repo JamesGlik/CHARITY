@@ -7,8 +7,8 @@ function Newsletter() {
     <div className="mt-8 w-full sm:w-[329px] justify-center">
       <div className="bg-[#F3F2E7] py-[40px] px-[48px] rounded-[12px] text-left flex justify-between sm:flex-col sm:items-start sm:px-[28px]">
         <div className="sm:w-full text-left"> 
-          <h3 className="text-[40px] text-[#3A1700] sm:text-[32px]">Newsletter</h3>
-          <p className="text-[#3A170080]">
+          <h3 className="text-[40px] text-[#3A1700] sm:text-[32px] font-rowdies">Newsletter</h3>
+          <p className="text-[#3A170080] font-manrope">
             Bring together people who care about a cause
           </p>
         </div>

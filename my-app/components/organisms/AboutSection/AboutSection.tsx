@@ -14,7 +14,7 @@ const AboutSection = () => {
             <ImageCard image="/about_us_image.svg" alt="About us image" />
           </div>
           <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[48px]">
-            <h1 className="font-medium text-[#E29F72] mt-[202px] sm:mt-5 tracking-[3px]">
+            <h1 className="font-medium text-[#E29F72] mt-[202px] sm:mt-5 tracking-[3px] font-rowdies">
               About Us
             </h1>
             <Heading
@@ -38,7 +38,7 @@ const AboutSection = () => {
 
         <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col">
           <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[138px]">
-            <h1 className="font-medium text-[#E29F72] mt-[298px] sm:mt-5 tracking-[3px]">
+            <h1 className="font-medium font-rowdies text-[#E29F72] mt-[298px] sm:mt-5 tracking-[3px]">
               Volunteer
             </h1>
             <Heading

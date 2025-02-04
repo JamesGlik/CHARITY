@@ -18,8 +18,8 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
   return (
     <section className="pt-[138px] pb-[112px] bg-white">
       <div className="mx-auto px-4 text-center">
-        <h2 className="text-[16px] font-semibold text-[#E29F72] tracking-[3px]">OUR CASES</h2>
-        <h3 className="mt-[17px] text-[56px] font-bold text-[#3A1700] sm:text-[40px]">
+        <h2 className="text-[16px] font-rowdies font-semibold text-[#E29F72] tracking-[3px]">OUR CASES</h2>
+        <h3 className="mt-[17px] font-rowdies text-[56px] font-bold text-[#3A1700] sm:text-[40px]">
           Our Recent Causes
         </h3>
       </div>
@@ -66,7 +66,7 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
           >
             <button
               onClick={handleExploreAll}
-              className="px-[40px] py-[15px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
+              className="px-[40px] py-[15px] font-rowdies text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
             >
               Explore All
             </button>
@@ -81,7 +81,7 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
           >
             <button
               onClick={handleShowLess}
-              className="px-[40px] py-[15px] text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
+              className="px-[40px] py-[15px] font-rowdies text-[#7E8AB8] border border-[#7E8AB8] rounded-[24px] hover:bg-[#7E8AB8] hover:text-white transition-all duration-300 ease-in-out"
             >
               Show Less
             </button>
