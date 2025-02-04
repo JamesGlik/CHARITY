@@ -40,12 +40,12 @@ const QuoteSlider = () => {
 
   const marqueeVariants = {
     animate: {
-      x: ["0%", "-100%", "0%", "100%", "0%"],
+      x: ["100%", "-100%"],
       transition: {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 15,
+          duration: 20,
           ease: "linear",
         },
       },
@@ -54,10 +54,10 @@ const QuoteSlider = () => {
 
   const images = [
     "/digitalside.png",
-    "/digitalside.png",
-    "/digitalside.png",
-    "/digitalside.png",
-    "/digitalside.png",
+    "/vortex.png",
+    "/travelexplorer.png",
+    "/fuzion.png",
+    "/mediafury.png",
   ];
 
   return (
