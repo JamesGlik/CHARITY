@@ -9,7 +9,7 @@ const BurgerMenu = () =>  {
   return (
     <div className="relative">
       <button
-        className="fixed top-4 right-4 z-[60] p-2 text-[#7E8AB8]"
+        className="fixed top-4 right-4 z-[60] p-[17px] text-[#7E8AB8] border border-[#7E8AB84E] rounded-full"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "✖" : <BurgerMenuIcon />}
