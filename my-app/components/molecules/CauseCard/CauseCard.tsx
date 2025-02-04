@@ -14,17 +14,17 @@ export default function CauseCard({ category, title, raised, goal, imageSrc }: C
         </span>
       </div>
       <div className="p-8">
-        <h3 className="mt-4 text-[24px] font-bold text-[#3A1700] sm:text-[22px]">{title}</h3>
+        <h3 className="mt-4 text-[24px] font-rowdies font-bold text-[#3A1700] sm:text-[22px]">{title}</h3>
         <div className="mt-[33px] text-gray-600">
           <div className="flex justify-between">
-            <p className="text-[#3A1700] text-[20px] font-bold">${raised.toLocaleString()}</p>
-            <p className=" text-[#3A170080]">${goal.toLocaleString()} Goal</p>
+            <p className="text-[#3A1700] font-manrope text-[20px] font-bold">${raised.toLocaleString()}</p>
+            <p className=" text-[#3A170080] font-manrope">${goal.toLocaleString()} Goal</p>
           </div>
         </div>
         <div className="mt-[24px]">
           <ProgressBar progress={raised} goal={goal} />
         </div>
-        <div className="mt-[40px]">
+        <div className="mt-[40px] font-rowdies">
           <Button text="Make a Donation" className="" />
         </div>
       </div>

@@ -30,8 +30,8 @@ const IconCard = ({
         />
       </div>
       <div>
-        <p className="text-[#3A170080]">{title}</p>
-        <p className="text-[20px] text-[#3A1700]">{content}</p>
+        <p className="text-[#3A170080] font-manrope">{title}</p>
+        <p className="text-[20px] text-[#3A1700] font-manrope">{content}</p>
       </div>
     </div>
   );
