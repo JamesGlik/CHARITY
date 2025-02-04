@@ -11,10 +11,10 @@ const VolunteersCard = ({ imagesrc, name }: VolunteersProps) => {
           width={270}
           height={208}
           alt="volunteers image"
-          className="rounded-tl-[12px] rounded-tr-[12px] "
+          className="rounded-tl-[12px] rounded-tr-[12px] w-full h-auto"
         />
-        <div className="flex flex-col gap-y-[25px] px-[32px] py-[23px] bg-[#FFF] rounded-bl-[12px] rounded-br-[12px]">
-          <p className="text-[#3A1700] font-rowdies text-[24px] font-light leading-[32px]">
+        <div className="flex flex-col gap-y-[25px] px-[32px] py-[23px] bg-[#FFF] rounded-bl-[12px] rounded-br-[12px] h-[200px]">
+          <p className="text-[#3A1700] font-rowdies text-[24px] font-light leading-[32px] w-full">
             {name}
           </p>
           <div>
