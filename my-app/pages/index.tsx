@@ -17,7 +17,7 @@ import StoriesSection from '@/components/organisms/StoriesSection/StoriesSection
 const index = () => {
   return (
     <div className="m-auto max-w-[1440px]">
-      <Header />
+      {/* <Header />
       <FeaturesSection />
       <Example />
       <AboutSection />
@@ -29,7 +29,7 @@ const index = () => {
       <StoriesSection/>
       <LatestArticles/>
       <CharitySection />
-      <ContactInfoSection />
+      <ContactInfoSection /> */}
       <FooterWrapper />
     </div>
   );
