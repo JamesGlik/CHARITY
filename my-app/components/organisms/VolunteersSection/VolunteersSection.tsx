@@ -15,7 +15,7 @@ const VolunteersSection = () => {
         Our Volunteers
       </h3>
 
-      <div className="grid grid-cols-4 lg:grid-cols-2 md:flex md:flex-col gap-x-[30px] gap-y-[32px]">
+      <div className="grid grid-cols-4 lg:grid-cols-2 md:flex md:flex-col gap-x-[30px] gap-y-[32px] pb-[32px]">
         <VolunteersCard imagesrc="/volunteers_image.jpg" name="Benito Noboa" />
         <VolunteersCard
           imagesrc="/volunteers_image.jpg"
