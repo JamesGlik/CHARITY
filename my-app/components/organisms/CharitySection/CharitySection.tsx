@@ -16,7 +16,7 @@ const CharitySection = () => {
       <img
         src="/charity_image.svg"
         alt="Charity Image"
-        className="object-contain rounded-lg sm:h-[720px] sm:mt-[-160px] sm:w-full"
+        className="object-contain rounded-lg sm:h-[720px] sm:mt-[-150px] sm:w-full"
       />
     </section>
   );

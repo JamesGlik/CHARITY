@@ -39,7 +39,7 @@ function LatestArticles() {
         <h2 className="text-[56px] font-bold text-[#3A1700] sm:text-[40px] font-rowdies">Latest Articles</h2>
       </div>
 
-      <div className="mt-[69px] sm:mt-[55px] flex flex-wrap justify-center gap-[30px] sm:gap-4">
+      <div className="pt-[69px] sm:pt-[55px] flex flex-wrap justify-center gap-[30px] sm:gap-4">
         {articles.map((article, index) => (
           <ArticleCard
             key={index}
@@ -57,7 +57,7 @@ function LatestArticles() {
         <Newsletter />
       </div>
 
-      <div className="mt-[32px] text-center">
+      <div className="pt-[32px] text-center">
         <LatestButton text="All News" variant="outline" />
       </div>
     </section>
