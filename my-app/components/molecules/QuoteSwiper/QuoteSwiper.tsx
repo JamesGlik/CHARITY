@@ -113,7 +113,7 @@ const QuoteSlider = () => {
           <RightIcon />
         </button>
       </div>
-      <div className="relative pb-[93px]">
+      <div className="relative pb-[93px] sm:w-[90%]">
         <div className="overflow-hidden w-full">
           <motion.div
             className="flex items-center gap-[96px]"

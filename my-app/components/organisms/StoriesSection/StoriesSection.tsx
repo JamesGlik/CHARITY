@@ -14,7 +14,7 @@ const StoriesSection = () => {
             Read Stories
           </h3>
         </div>
-        <div className="relative">
+        <div className="relative z-[0]">
           <QuoteSlider />
           <div className="absolute left-1/2 -top-7 transform -translate-x-1/2 z-[1]">
             <StoriesIcon />
