@@ -14,18 +14,18 @@ const AboutSection = () => {
             <ImageCard image="/about_us_image.svg" alt="About us image" />
           </div>
           <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[48px]">
-            <h1 className="font-medium text-[#E29F72] mt-[202px] sm:mt-5 tracking-[3px] font-rowdies">
+            <h1 className="font-medium text-[#E29F72] pt-[202px] sm:pt-5 tracking-[3px] font-rowdies">
               About Us
             </h1>
             <Heading
               title="Highest form of love"
               subtitle="The practice of charity means the voluntary giving of help to those in need, as a humanitarian act. There are a number of philosophies."
             />
-            <PrimaryButton text="About Us" className="mt-[35px]" />
+            <PrimaryButton text="About Us" className=" " />
           </div>
         </div>
 
-        <div className="flex sm:flex-wrap justify-center gap-8 mt-16">
+        <div className="flex sm:flex-wrap justify-center gap-8 pt-16">
           <StatsSection
             title="Whatever it is that you care about, there will be a charity working on it."
             stats={[
@@ -38,14 +38,14 @@ const AboutSection = () => {
 
         <div className="flex sm:flex-wrap items-center gap-8 sm:flex-col">
           <div className="w-1/2 sm:w-full sm:pl-[30px] sm:pt-[138px]">
-            <h1 className="font-medium font-rowdies text-[#E29F72] mt-[298px] sm:mt-5 tracking-[3px]">
+            <h1 className="font-medium font-rowdies text-[#E29F72] pt-[298px] sm:pt-5 tracking-[3px]">
               Volunteer
             </h1>
             <Heading
               title="Unselfish love of one’s fellow men"
               subtitle="Charity is the act of giving help to those in need of it. It is a humanitarian act. It involves giving money, goods or time and effort to those who need it."
             />
-            <PrimaryButton text="Be a Volunteer" className="mt-[35px]" />
+            <PrimaryButton text="Be a Volunteer" className="" />
           </div>
           <div className="w-1/2 sm:w-full sm:pb-[90px]">
             <ImageCard image="/volunteer_image.svg" alt="Volunteer image" />

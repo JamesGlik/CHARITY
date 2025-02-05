@@ -4,7 +4,7 @@ import LatestButton from '@/components/atoms/LatestButton/LatestButton';
 
 function Newsletter() {
   return (
-    <div className="mt-8 w-full sm:w-[329px] justify-center">
+    <div className="pt-8 w-full sm:w-[329px] justify-center">
       <div className="bg-[#F3F2E7] py-[40px] px-[48px] rounded-[12px] text-left flex justify-between sm:flex-col sm:items-start sm:px-[28px]">
         <div className="sm:w-full text-left"> 
           <h3 className="text-[40px] text-[#3A1700] sm:text-[32px] font-rowdies">Newsletter</h3>
@@ -12,7 +12,7 @@ function Newsletter() {
             Bring together people who care about a cause
           </p>
         </div>
-        <div className="flex flex-wrap gap-4 sm:flex-col sm:items-start mt-[20px] sm:mt-[0px]">
+        <div className="flex flex-wrap gap-4 sm:flex-col sm:items-start pt-[20px] sm:pt-[22px]">
           <Input placeholder="Your Email" />
           <LatestButton text="Subscribe" />
         </div>

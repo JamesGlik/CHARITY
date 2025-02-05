@@ -5,7 +5,7 @@ export default function GallerySection() {
     return (
       <section className="py-[138px] sm:py-[80px] relative overflow-hidden sm:pb-[112px]">
         <Heading text="Watch Our Gallery" subtext="Our Gallery" />
-        <div className="relative mx-auto mt-[0px] sm:mt-[20px]" style={{ height: '500px' }}>
+        <div className="relative mx-auto pt-[0px] sm:pt-[20px]" style={{ height: '500px' }}>
           <div className="absolute top-[149px] left-[-40px] sm:top-[60px] sm:left-[-10px] overflow-hidden">
             <img
               src="/185x144_gray.svg"
@@ -46,7 +46,7 @@ export default function GallerySection() {
             />
           </div>
         </div>
-        <div className="mt-[270px] sm:mt-[150px] sm:pt-[288px] flex justify-center">
+        <div className="pt-[270px] sm:pt-[488px] flex justify-center">
           <Button label="Explore All" />
         </div>
       </section>

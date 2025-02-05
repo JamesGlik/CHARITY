@@ -19,11 +19,11 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
     <section className="pt-[138px] pb-[112px] bg-white">
       <div className="mx-auto px-4 text-center">
         <h2 className="text-[16px] font-rowdies font-semibold text-[#E29F72] tracking-[3px]">OUR CASES</h2>
-        <h3 className="mt-[17px] font-rowdies text-[56px] font-bold text-[#3A1700] sm:text-[40px]">
+        <h3 className="pt-[17px] font-rowdies text-[56px] font-bold text-[#3A1700] sm:text-[40px]">
           Our Recent Causes
         </h3>
       </div>
-      <div className="mt-[64px] flex flex-wrap sm:flex-wrap lg:flex-wrap xl:flex-wrap gap-[30px] justify-center px-[135px] justify-items-center">
+      <div className="pt-[64px] flex flex-wrap sm:flex-wrap lg:flex-wrap xl:flex-wrap gap-[30px] justify-center px-[135px] justify-items-center">
         {visibleCauses.map((cause, index) => (
           <motion.div
             key={index}
@@ -31,7 +31,7 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
               scale: 1.05,
               transition: { duration: 0.3 },
             }}
-            className="mt-8"
+            className="pt-8"
           >
             <CauseCard {...cause} />
           </motion.div>
@@ -49,13 +49,13 @@ export default function RecentCauses({ causes }: RecentCausesProps) {
                 scale: 1.05,
                 transition: { duration: 0.3 },
               }}
-              className="mt-8"
+              className="pt-8"
             >
               <CauseCard {...cause} />
             </motion.div>
           ))}
       </div>
-      <div className="mt-[64px] text-center">
+      <div className="pt-[64px] text-center">
         {!showAll ? (
           <motion.div
             whileHover={{
