@@ -12,7 +12,7 @@ function Footer({
 }: FooterProps) {
   return (
     <footer className="bg-[#D58E5E] px-[135px] sm:h-[1100px]">
-      <div className="mx-auto grid grid-cols-3 sm:grid-cols-1 max-sm:grid-cols-1">
+      <div className="mx-auto grid grid-cols-3 xl:grid-cols-1 sm:grid-cols-1 max-sm:grid-cols-1">
         <div className="sm:mb-4 sm:flex sm:justify-center sm:items-center">
           <h2 className="text-white text-[40px] tracking-[-1px] font-light mt-[74px] font-rowdies sm:text-center">
             CHA
@@ -28,16 +28,16 @@ function Footer({
         </div>
       </div>
       <div className="relative">
-        <div className="absolute sm:top-[40px] top-[-130px] right-[-20px] sm:w-[160px] sm:h-[48px]">
+        <div className="absolute sm:top-[40px] lg:top-[0px] lg:right-[50px] top-[-130px] right-[-20px] sm:w-[160px] sm:h-[48px]">
           <SocialImage {...socialImage} />
         </div>
       </div>
 
-      <div className="flex justify-between font-manrope items-center mt-[70px] pb-[54px] border-t border-white opacity-[50%] sm:flex-col sm:justify-center sm:items-center sm:text-center sm:w-full sm:mt-[150px]">
+      <div className="flex justify-between font-manrope items-center pt-[70px] pb-[54px] border-t border-white opacity-[50%] sm:flex-col sm:justify-center sm:items-center sm:text-center sm:w-full sm:mt-[150px]">
         <p className="text-sm text-white mt-[41px] sm:w-[150%] opacity-[50%] sm:mt-4 sm:mb-2">
           {copyright}
         </p>
-        <div className="flex space-x-4 sm:flex sm:flex-row sm:justify-center pt-[40px] sm:w-[300%] sm:items-center">
+        <div className="flex space-x-4 sm:flex sm:flex-row sm:justify-center pt-[40px] sm:items-center">
           {termsLinks.map((link, index) => (
             <a
               key={index}
