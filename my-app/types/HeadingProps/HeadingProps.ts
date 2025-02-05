@@ -1,5 +1,5 @@
 export type HeadingProps = {
-    title: string;
+    title: string | React.ReactNode;
     subtitle: string;
     className?: string;
 };
